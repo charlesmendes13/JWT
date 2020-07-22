@@ -27,6 +27,16 @@ namespace JWT
        
         public void ConfigureServices(IServiceCollection services)
         {
+            // Redis
+
+            services.AddDistributedRedisCache(options =>
+            {
+                options.Configuration = Configuration.GetConnectionString("DefaultConnection");
+                options.InstanceName = "JWT";
+            });
+
+            // JWT
+
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options => {
                 options.TokenValidationParameters = new TokenValidationParameters
