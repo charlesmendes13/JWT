@@ -29,7 +29,7 @@ namespace JWT.Services
             };
 
             var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(_configuration["SecurityKey"])
+                Encoding.UTF8.GetBytes(_configuration["JwtToken:SecurityKey"])
                 );
 
             var creds = new SigningCredentials(
@@ -38,8 +38,8 @@ namespace JWT.Services
                 );
 
             var token = new JwtSecurityToken(
-                issuer: _configuration["iss"],
-                audience: _configuration["aud"],
+                issuer: _configuration["JwtToken:Issuer"],
+                audience: _configuration["JwtToken:Audience"],
                 claims: claims,
                 expires: DateTime.UtcNow.AddMinutes(2),
                 signingCredentials: creds

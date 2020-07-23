@@ -26,10 +26,10 @@ namespace JWT.Data
 
         public void Set(RefreshToken refreshToken)
         {
-            DistributedCacheEntryOptions opcoesCache = new DistributedCacheEntryOptions();
-            opcoesCache.SetAbsoluteExpiration(refreshToken.TokenExpires);
+            var options = new DistributedCacheEntryOptions();
+            options.SetAbsoluteExpiration(refreshToken.TokenExpires);
 
-            _cache.SetString(refreshToken.Token, JsonConvert.SerializeObject(refreshToken), opcoesCache);
+            _cache.SetString(refreshToken.Token, JsonConvert.SerializeObject(refreshToken), options);
         }
     }
 }

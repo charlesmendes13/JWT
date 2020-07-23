@@ -1,18 +1,36 @@
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.csprojAssemblyReference.cache
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.AssemblyInfoInputs.cache
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.AssemblyInfo.cs
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.csproj.CoreCompileInputs.cache
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.RazorAssemblyInfo.cache
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.RazorAssemblyInfo.cs
-D:\Visual Studio\JWT\JWT\bin\Debug\netcoreapp2.1\appsettings.Development.json
-D:\Visual Studio\JWT\JWT\bin\Debug\netcoreapp2.1\appsettings.json
-D:\Visual Studio\JWT\JWT\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
-D:\Visual Studio\JWT\JWT\bin\Debug\netcoreapp2.1\JWT.deps.json
-D:\Visual Studio\JWT\JWT\bin\Debug\netcoreapp2.1\JWT.runtimeconfig.json
-D:\Visual Studio\JWT\JWT\bin\Debug\netcoreapp2.1\JWT.runtimeconfig.dev.json
-D:\Visual Studio\JWT\JWT\bin\Debug\netcoreapp2.1\JWT.dll
-D:\Visual Studio\JWT\JWT\bin\Debug\netcoreapp2.1\JWT.pdb
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.RazorTargetAssemblyInfo.cache
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.dll
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.pdb
-D:\Visual Studio\JWT\JWT\obj\Debug\netcoreapp2.1\JWT.genruntimeconfig.cache
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.csprojAssemblyReference.cache
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.AssemblyInfoInputs.cache
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.AssemblyInfo.cs
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.csproj.CoreCompileInputs.cache
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.RazorAssemblyInfo.cache
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.RazorAssemblyInfo.cs
+D:/Visual Studio/JWT/JWT/bin/Debug/netcoreapp2.1/appsettings.Development.json
+D:/Visual Studio/JWT/JWT/bin/Debug/netcoreapp2.1/appsettings.json
+D:/Visual Studio/JWT/JWT/bin/Debug/netcoreapp2.1/Properties/launchSettings.json
+D:/Visual Studio/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.deps.json
+D:/Visual Studio/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.runtimeconfig.json
+D:/Visual Studio/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.runtimeconfig.dev.json
+D:/Visual Studio/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.dll
+D:/Visual Studio/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.pdb
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.RazorTargetAssemblyInfo.cache
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.dll
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.pdb
+D:/Visual Studio/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.genruntimeconfig.cache
+/Users/charlesmendes/Projects/JWT/JWT/bin/Debug/netcoreapp2.1/appsettings.Development.json
+/Users/charlesmendes/Projects/JWT/JWT/bin/Debug/netcoreapp2.1/Properties/launchSettings.json
+/Users/charlesmendes/Projects/JWT/JWT/bin/Debug/netcoreapp2.1/appsettings.json
+/Users/charlesmendes/Projects/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.deps.json
+/Users/charlesmendes/Projects/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.runtimeconfig.json
+/Users/charlesmendes/Projects/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.runtimeconfig.dev.json
+/Users/charlesmendes/Projects/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.dll
+/Users/charlesmendes/Projects/JWT/JWT/bin/Debug/netcoreapp2.1/JWT.pdb
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.csprojAssemblyReference.cache
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.csproj.CoreCompileInputs.cache
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.RazorAssemblyInfo.cache
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.RazorAssemblyInfo.cs
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.AssemblyInfoInputs.cache
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.AssemblyInfo.cs
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.RazorTargetAssemblyInfo.cache
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.dll
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.pdb
+/Users/charlesmendes/Projects/JWT/JWT/obj/Debug/netcoreapp2.1/JWT.genruntimeconfig.cache
