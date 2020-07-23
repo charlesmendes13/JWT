@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace JWT.Models
 {
-    public class Token
+    public class AcessToken
     {
-        public AcessToken AcessToken { get; set; }
-        public RefreshToken RefreshToken { get; set; }
+        public string Token { get; set; }
+        public DateTime TokenExpires { get; set; }
     }
 }

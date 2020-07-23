@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace JWT.Services
 {
-    public interface ITokenService
+    public interface IUserService
     {
-        AcessToken AcessToken(string userId);
-
-        RefreshToken RefreshToken();
+        Token Login(User user);
     }
 }

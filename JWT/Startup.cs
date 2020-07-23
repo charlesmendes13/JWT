@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using JWT.Data;
+using JWT.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -23,10 +25,15 @@ namespace JWT
         }
 
         public IConfiguration Configuration { get; }
-
        
         public void ConfigureServices(IServiceCollection services)
         {
+            // IoC
+
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ITokenService, TokenService>();
+            services.AddTransient<ICacheRepository, CacheRepository>();
+
             // Redis
 
             services.AddDistributedRedisCache(options =>
