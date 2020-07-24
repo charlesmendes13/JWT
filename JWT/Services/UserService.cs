@@ -1,6 +1,5 @@
 ﻿using JWT.Data;
 using JWT.Models;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,17 +33,12 @@ namespace JWT.Services
             }
             else if (user.GrantType == "refresh_token")
             {
-                var token = _cacheRepository.Get(user.RefreshToken);
+                var refreshToken = _cacheRepository.Get(user.RefreshToken);
 
-                if (!String.IsNullOrWhiteSpace(token))
+                if (refreshToken != null)
                 {
-                    var refreshToken = JsonConvert.DeserializeObject<RefreshToken>(token);
-
-                    if (user.RefreshToken == refreshToken.Token)
-                    {
-                        return Token(user);
-                    }                    
-                }                
+                    return Token(user);
+                }             
             }
 
             return null;

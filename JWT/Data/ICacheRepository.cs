@@ -8,7 +8,7 @@ namespace JWT.Data
 {
     public interface ICacheRepository
     {
-        string Get(string token);
+        RefreshToken Get(string token);
 
         void Set(RefreshToken refreshToken);
     }

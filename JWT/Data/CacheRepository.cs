@@ -17,11 +17,16 @@ namespace JWT.Data
             _cache = cache;
         }
 
-        public string Get(string token)
+        public RefreshToken Get(string token)
         {
             var refreshToken = _cache.GetString(token);
 
-            return refreshToken;
+            if (!String.IsNullOrWhiteSpace(refreshToken))
+            {
+                return JsonConvert.DeserializeObject<RefreshToken>(refreshToken);
+            }
+
+            return null;  
         }
 
         public void Set(RefreshToken refreshToken)
