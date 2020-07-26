@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using JWT.Services;
 using JWT.Models;
@@ -9,18 +8,18 @@ namespace JWT.Controllers
     [Route("api/[controller]")]
     public class LoginController : Controller
     {
-        private readonly IUserService _userService;
+        private readonly ILoginService _loginService;
 
-        public LoginController(IUserService userService)
+        public LoginController(ILoginService loginService)
         {
-            _userService = userService;
+            _loginService = loginService;
         }
 
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult Login([FromBody] User user)
+        public ActionResult Login([FromBody] Login login)
         {
-            var token = _userService.Login(user);
+            var token = _loginService.Login(login);
 
             if (token != null)
             {

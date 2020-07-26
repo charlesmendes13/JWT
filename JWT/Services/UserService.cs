@@ -1,61 +1,32 @@
-﻿using JWT.Data;
+﻿using System.Linq;
+using Microsoft.AspNetCore.Identity;
 using JWT.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using JWT.Extensions;
 
 namespace JWT.Services
 {
     public class UserService : IUserService
     {
-        private readonly ITokenService _tokenService;
-        private readonly ICacheRepository _cacheRepository;
+        private readonly UserManager<User> _userManager;
 
-        public UserService(ITokenService tokenService, 
-            ICacheRepository cacheRepository)
+        public UserService(UserManager<User> userManager)
         {
-            _tokenService = tokenService;
-            _cacheRepository = cacheRepository;
+            _userManager = userManager;
         }
 
-        public Token Login(User user)
+        public bool Verify(User user)
         {
-            if (user.GrantType == "password")
-            {
-                var userId = "charles.mendes";
-                var password = "123";
+            var result = _userManager.Users.FirstOrDefault(x =>
+                x.UserName.Equals(user.UserName));
 
-                if (user.UserId == userId && user.Password == password)
-                {
-                    return Token(user);
-                }
-            }
-            else if (user.GrantType == "refresh_token")
-            {
-                var refreshToken = _cacheRepository.Get(user.RefreshToken);
+            var verify = HasherExtension.VerifyHashedPassword(result.PasswordHash, user.PasswordHash);
 
-                if (refreshToken != null)
-                {
-                    return Token(user);
-                }             
+            if (verify)
+            {
+                return true;
             }
 
-            return null;
-        }
-
-        private Token Token(User user)
-        {
-            var accessToken = _tokenService.AcessToken(user.UserId);
-            var refreshToken = _tokenService.RefreshToken();
-                        
-            _cacheRepository.Set(refreshToken);
-
-            return new Token
-            {
-                AcessToken = accessToken,
-                RefreshToken = refreshToken
-            };
+            return false;
         }
     }
 }

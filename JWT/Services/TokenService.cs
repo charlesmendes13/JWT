@@ -1,14 +1,11 @@
-﻿using JWT.Models;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using JWT.Models;
 
 namespace JWT.Services
 {
@@ -41,7 +38,7 @@ namespace JWT.Services
                 issuer: _configuration["JwtToken:Issuer"],
                 audience: _configuration["JwtToken:Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(2),
+                expires: DateTime.UtcNow.AddMinutes(Convert.ToInt32(_configuration["JwtToken:TokenExpires"])),
                 signingCredentials: creds
                 );
 
@@ -57,7 +54,7 @@ namespace JWT.Services
         public RefreshToken RefreshToken()
         {
             var randomNumber = new byte[32];
-            var expires = DateTime.UtcNow.AddMinutes(4);
+            var expires = DateTime.UtcNow.AddMinutes(Convert.ToInt32(_configuration["JwtToken:RefreshTokenExpires"]));
 
             using (var rng = RandomNumberGenerator.Create())
             {
