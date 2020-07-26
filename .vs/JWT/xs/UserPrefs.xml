@@ -1,12 +1,15 @@
 ﻿<Properties StartupConfiguration="{DEB1B894-7D94-49BA-8B27-E9D63692D4C9}|Default">
   <MonoDevelop.Ide.ItemProperties.JWT PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="JWT/appsettings.json">
+    <Files>
+      <File FileName="JWT/appsettings.json" Line="16" Column="15" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="JWT" expanded="True">
             <Node name="JWT" expanded="True">
-              <Node name="Startup.cs" selected="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>

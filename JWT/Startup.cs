@@ -43,8 +43,8 @@ namespace JWT
 
             services.AddDistributedRedisCache(options =>
             {
-                options.Configuration = Configuration.GetConnectionString("RedisConnection");
-                options.InstanceName = "JWT";
+                options.Configuration = Configuration["RedisCahe:Connection"];
+                options.InstanceName = Configuration["RedisCahe:InstanceName"];
             });
 
             // Identity
